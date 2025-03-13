@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Aula 05</title>
+</head>
+<body>
+  <h2>4. FERRAMENTAS UTILIZADAS NA BIBLIOTECA</h2>
+  <h3>4.1 Sobre a biblioteca</h3>
+  <h4>4.1.1 O Inip</h4>
+  <h4>4.1.2 A biblioteca</h4>
+  <h3>4.2 DIAGNÓSTICO</h3>
+  <br>
+  <h1>Principais formatações</h1>
+
+  <h2>Negrito/Destaque</h2>
+  <pre>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semântica)</pre>
+  <pre>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag Strong (semântica)</pre>
+  <br>
+
+  <h2>Itálico/Ênfase</h2>
+  <pre>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (não semântica)</pre>
+  <pre>Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag em (semântica)</pre>
+  <br>
+
+  <h2>Texto marcador</h2>
+  <pre>Aqui vamos destacar um texto com um <mark style="background: green">marcador verde</mark> usando a tag mark</pre>
+  <pre>Aqui vamos destacar um texto com um <mark style="background: red">marcador vermelho</mark> usando a tag mark</pre>
+  <br>
+
+  <h2>Texto pequeno e grande</h2>
+  <pre><small>Este texto é pequeno</small></pre>
+  <pre><big>Este texto é grande</big></pre>
+  <br>
+
+  <h2>Texto deletado vs riscado</h2>
+  <pre>Este texto foi <del>deletado</del> e este texto está <s>riscado</s></pre>
+  <br>
+
+  <h2>Texto Inserido</h2>
+  <pre>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</pre>
+  <pre>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</pre>
+  <br>
+
+  <h2>Texto sobrescrito</h2>
+  <pre>Vamos demonstrar uma fórmula da equação do segundo grau ax<sup>2</sup> + bx + c = 0</pre>
+  <br>
+
+  <h2>Texto subscrito</h2>
+  <pre>A fórmula química da água é H<sub>2</sub>O</pre>
+  <br>
+<h2>Trecho de código</h2>
+  <code>
+    import requests
+
+    # Configuration
+    TARGET_URL = "http://blog.bigbang.htb/wp-admin/admin-ajax.php" # EDIT
+    UPLOAD_ACTION = "upload_image_from_url"
+    ACCEPTED_FILES = "image/gif"
+    UPLOAD_BASE_URL = "http://blog.bigbang.htb/wp-content/uploads/2025/01/" #EDIT
+    
+    # Headers
+    HEADERS = {
+        "Host": "blog.bigbang.htb", #EDIT 
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+        "Cookie": "wordpress_test_cookie=WP%20Cookie%20check",
+        "Upgrade-Insecure-Requests": "1",
+        "Priority": "u=0, i",
+        "Content-Type": "application/x-www-form-urlencoded",
+    }
+</code>
+  <br>
+
+  <h2>Endereço</h2>
+  <pre><address>Rua Exemplo, 123 - Centro, São Paulo - SP</address></pre>
+  <br>
+
+  <h2>Code</h2>
+  <pre><code>console.log("Hello, World!");</code></pre>
+  <br>
+
+  <h2>Citações</h2>
+  <pre><blockquote>"O único limite para nossas realizações de amanhã são nossas dúvidas de hoje." - Franklin D. Roosevelt</blockquote></pre>
+  <pre><q>O sucesso é a soma de pequenos esforços repetidos diariamente.</q></pre>
+  <br>
+
+  <h2>Abreviações</h2>
+  <pre>A abreviação de "Hypertext Markup Language" é <abbr title="Hypertext Markup Language">HTML</abbr></pre>
+
+</body>
+</html>
