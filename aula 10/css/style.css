@@ -1,0 +1,11 @@
+.video {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 0fr); /* 2 colunas */
+    gap: 20px;
+}
+.img1 {
+    display: flex;
+    justify-content: center;
+}
